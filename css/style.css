@@ -4,13 +4,9 @@
 
 :root {
   --black-text-color: #121723;
-
   --grey-text-color: #a1a6b4;
-
   --border-color: #e6e8ec;
-
   --btn-color: #6d31ee;
-
   --btn-color-light: #aa9dfa;
 }
 
@@ -83,9 +79,7 @@ h1, h2, h3, h4 {
 
 a {
   display: inline-block;
-
   text-decoration: none;
-
   cursor: pointer;
 }
 
@@ -95,9 +89,7 @@ button {
 
 ul {
   margin: 0;
-
   padding: 0;
-
   list-style: none;
 }
 
@@ -119,87 +111,100 @@ textarea {
 
 .container {
   max-width: 1140px;
-
   margin: 0 auto;
-
   padding: 0 15px 0 15px;
 }
 
 /* header */
 .header-top {
   display: flex;
-
   flex-direction: row;
-
   justify-content: space-between;
-
+  align-items: center;
   padding: 20px 0;
+}
 
-  border-bottom: var(--border-color);
+.header-top__logo {
+  width: 160px;
+  height: 20px;
 }
 
 .header-top__nav {
   display: flex;
-  
   align-items: center;
 }
 
 .header-top__list {
   display: flex;
-
   flex-direction: row;
-
-  /* align-items: center; */
-}
-
-.header-top__link {
-  font-size: 20px;
-
-  line-height: 20px;
-
-  color: var(--black-text-color);
 }
 
 .header-top__item:not(:last-child) {
   margin-right: 58.75px;
 }
 
-.header-box {
-  display: flex;
+.header-top__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--black-text-color);
+}
 
+.header-top__box {
+  display: flex;
   align-items: center;
 }
 
-.header-box__search {
+.header-top__search {
   margin-right: 24px;
-
   width: 24px;
-
   height: 24px;
-
   border: none;
-
   background-color: none;
-
   background: url(../img/search.svg) no-repeat center;
 }
 
-.header-box__login {
-  padding: 12px 32.5px;
-
+.header-top__login {
+  padding: 10px 31px;
   font-weight: 500;
-
   font-size: 16px;
-
   line-height: 16px;
-
   background: none;
-
   border: 2px solid var(--black-text-color);
-
   border-radius: 77px;
 }
 
 .header-bottom {
-  border-bottom: var(--border-color);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  border: 1px solid var(--border-color);
+}
+
+.header-bottom__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-bottom__nav {
+  display: flex;
+  /* align-items: center; */
+}
+
+.header-bottom__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-bottom__item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.header-bottom__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black-text-color);
 }
