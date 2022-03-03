@@ -73,7 +73,7 @@ body {
   font-family: 'Muller', Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -88,6 +88,7 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.2s linear;
 }
 
 ul {
@@ -175,21 +176,18 @@ textarea {
 }
 
 .header-bottom {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  left: 0;
-  border: 1px solid var(--border-color);
-}
-
-.header-bottom__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1140px;
-  padding: 0 15px;
+}
+
+.header-bottom_border {
+  position: absolute;
+  height: 60px;
+  left: 0;
+  right: 0;
+  top: 80px;
+  border: 1px solid var(--border-color);
 }
 
 .header-bottom__nav {
@@ -221,7 +219,7 @@ textarea {
 .broadcast-box__item {
   display: flex;
   flex-direction: row;
-  padding: 2px 11px 3px 11px;
+  padding: 3px 11px 3px 11px;
   width: 175px;
   height: 40px;
   border-left: 1px solid var(--border-color);
@@ -261,7 +259,7 @@ textarea {
 }
 
 .header-bottom__age {
-  padding: 20px 8px;
+  padding: 20.5px 8px;
   background-color: var(--border-color);
 }
 
@@ -273,6 +271,47 @@ textarea {
   font-size: 12px;
   line-height: 16px;
   color: var(--grey-text-color);
-  background-color: white;
+  background-color: #fff;
   border-radius: 50%;
+}
+
+/* hero */
+.section-hero__container {
+  padding: 94px 15px;
+  background: url(../img/hero-bg.png) no-repeat center;
+  background-position: calc(100% - 15px);
+}
+
+.section-hero__heading {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--black-text-color);
+}
+
+.section-hero__heading span {
+  font-style: italic;
+}
+
+.section-hero__desc {
+  max-width: 635px;
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black-text-color);
+}
+
+.section-hero__desc a {
+  /* color: ; */
+}
+
+.section-hero__btn {
+  padding: 25px 54px;
+  background: var(--btn-color);
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
 }
