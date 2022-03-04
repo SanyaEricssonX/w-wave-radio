@@ -160,9 +160,7 @@ textarea {
 
 .header-top__search {
   margin-right: 24px;
-  width: 24px;
   height: 24px;
-  background: url(../img/search.svg) no-repeat center;
 }
 
 .header-top__login {
@@ -188,6 +186,7 @@ textarea {
   right: 0;
   top: 80px;
   border: 1px solid var(--border-color);
+  z-index: -1;
 }
 
 .header-bottom__nav {
@@ -303,7 +302,7 @@ textarea {
 }
 
 .section-hero__desc a {
-  /* color: ; */
+  color: var(--btn-color);
 }
 
 .section-hero__btn {
@@ -314,4 +313,9 @@ textarea {
   font-size: 20px;
   line-height: 20px;
   color: #fff;
+}
+
+/* podcasts */
+.section-podcasts {
+  background-color: var(--border-color);
 }

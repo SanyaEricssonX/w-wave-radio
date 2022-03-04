@@ -24,7 +24,6 @@
     <div class="container header-container">
       <div class="header-top">
         <img src="img/wwave-logo.svg" alt="Логотип" class="header-top__logo">
-
         <nav class="header-top__nav">
           <ul class="header-top__list">
             <li class="header-top__item">
@@ -44,18 +43,21 @@
             </li>
           </ul>
         </nav>
-
         <div class="header-top__box">
           <button class="header-top__search">
-
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </button>
-
-          <a class="header-top__login">
+          <a class="header-top__login" aria-label="Кнопка войти">
             Вход
           </a>
         </div>
       </div>
-
       <div class="header-bottom">
         <nav class="header-bottom__nav">
           <ul class="header-bottom__list">
@@ -91,11 +93,10 @@
             </li>
           </ul>
         </nav>
-
         <ul class="header-bottom__box broadcast-box">
           <li class="broadcast-box__item">
             <div class="broadcast-box__align">
-              <button class="broadcast-box__play">
+              <button class="broadcast-box__play" aria-label="Кнопка: включить прошлый эфир" tabindex="0">
                 <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
@@ -103,21 +104,18 @@
                 </svg>
               </button>
             </div>
-
             <div class="broadcast-box__content">
               <span class="broadcast-box__desc">
                 Ранее в эфире
               </span>
-
               <span class="broadcast-box__title">
                 «Музыка»
               </span>
             </div>
           </li>
-
           <li class="broadcast-box__item">
             <div class="broadcast-box__align">
-              <button class="broadcast-box__play">
+              <button class="broadcast-box__play" aria-label="Кнопка: включить текущий эфир" tabindex="0">
                 <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
@@ -125,22 +123,18 @@
                 </svg>
               </button>
             </div>
-
             <div class="broadcast-box__content">
               <span class="broadcast-box__desc">
                 Сейчас в эфире
               </span>
-
               <span class="broadcast-box__title">
                 «Как так?»
               </span>
             </div>
           </li>
         </ul>
-
         <div class="header-bottom__age"></div>
       </div>
-
       <div class="header-bottom_border"></div>
     </div>
   </header>
@@ -151,21 +145,80 @@
         <h1 class="section-hero__heading">
           Радио <span>W-Wawe</span>
         </h1>
-
         <p class="section-hero__desc">
-          Привет, на связи W-Wawe! Раньше мы были <a>изданием</a>, а теперь пробуем себя в&nbsp;разоворном жанре. Говорим о музыке,
+          Привет, на связи W-Wawe! Раньше мы были <a>изданием</a>, а теперь пробуем себя в&nbsp;разоворном жанре.
+          Говорим о музыке,
           политике, истории, науке и&nbsp;культуре. Здесь, помимо прямого эфира — архив передач и многое другое :)
         </p>
-
-        <button class="section-hero__btn" aria-label="Слушать эфир">
+        <a class="section-hero__btn" aria-label="Слушать эфир">
           Слушать эфир
-        </button>
+        </a>
       </div>
     </section>
 
     <section class="section-podcasts">
       <div class="container">
-
+        <h2 class="section-podcasts__heading">
+          Подкасты
+        </h2>
+        <ul class="section-podcasts__list">
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item1.jpg" alt="Обложка подкаста Европа. XIX век" class="section-podcasts__img">
+            <div class="section-podcasts__content">
+              <div class="section-podcasts__top podcasts-top">
+                <div class="podcasts-top__box">
+                  <p class="podcasts-top__duration">
+                    15:43
+                  </p>
+                  <h4 class="podcasts-top__title">
+                    Европа. XIX век
+                  </h4>
+                  <p class="podcasts-top__author">
+                    Дмитрий Гутенберг
+                  </p>
+                </div>
+                <svg width="48" height="48" viewvox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                  <path
+                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                    fill="#A1A6B4" />
+                </svg>
+              </div>
+              <div class="section-podcasts__bottom podcasts-bottom">
+                <p class="podcasts-bottom__views">
+                  258
+                </p>
+                <p class="podcasts-bottom__likes">
+                  104
+                </p>
+                <p class="podcasts-bottom__links">
+                  68
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item2.jpg" alt="Обложка подкаста О музыке" class="section-podcasts__img">
+          </li>
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item3.jpg" alt="Обложка подкаста Люди сегодня" class="section-podcasts__img">
+          </li>
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item4.jpg" alt="Обложка подкаста Хэллоу, Африка!" class="section-podcasts__img">
+          </li>
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item5.jpg" alt="Обложка подкаста Обо всём" class="section-podcasts__img">
+          </li>
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item6.jpg" alt="Обложка подкаста Физика цвета" class="section-podcasts__img">
+          </li>
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item7.jpg" alt="Обложка подкаста Источник звука" class="section-podcasts__img">
+          </li>
+          <li class="section-podcasts__item">
+            <img src="img/podcasts-item8.jpg" alt="Обложка подкаста Правила этикета" class="section-podcasts__img">
+          </li>
+        </ul>
       </div>
     </section>
 
