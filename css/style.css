@@ -75,6 +75,7 @@ body {
 
 h1, h2, h3, h4, p {
   margin: 0;
+  color: var(--black-text-color);
 }
 
 a {
@@ -254,7 +255,6 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: var(--black-text-color);
 }
 
 .header-bottom__age {
@@ -286,7 +286,6 @@ textarea {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  color: var(--black-text-color);
 }
 
 .section-hero__heading span {
@@ -298,7 +297,6 @@ textarea {
   margin-bottom: 45px;
   font-size: 16px;
   line-height: 24px;
-  color: var(--black-text-color);
 }
 
 .section-hero__desc a {
@@ -317,5 +315,115 @@ textarea {
 
 /* podcasts */
 .section-podcasts {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--border-color);
+}
+
+.section-podcasts__heading {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.section-podcasts__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-podcasts__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  max-width: 540px;
+  background-color: #fff;
+}
+
+.section-podcasts__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.section-podcasts__item:nth-child(n+7) {
+  margin-bottom: 0;
+}
+
+.section-podcasts__item:last-child {
+  margin: 0;
+}
+
+.podcasts-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 30px;
+}
+
+.podcasts-top__box {
+  width: 176px;
+}
+
+.podcasts-top__duration {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.podcasts-top__title {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.podcasts-top__author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--grey-text-color);
+}
+
+.podcasts-bottom {
+  display: flex;
+  padding: 10px 0 6px 30px;
+  width: 428px;
+  border-top: 1px solid var(--border-color);
+}
+
+.podcasts-bottom__btn {
+  display: flex;
+  cursor: pointer;
+}
+
+.podcasts-bottom__btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.podcasts-bottom__btn svg {
+  margin-right: 6px;
+}
+
+.podcasts-bottom__btn p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--grey-text-color);
+}
+
+.section-podcasts__date {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 51px;
+  height: 16px;
+  background-color: var(--border-color);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: var(--black-text-color);
 }
